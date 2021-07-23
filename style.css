@@ -1,0 +1,16 @@
+#image-01{
+    width: 150px;
+}
+#image-02{
+    width: 200px;
+    margin-left: 100px;
+}
+#image-03{
+    width: 270px;
+}
+
+.container{
+   
+    justify-content: space-between;
+}
+

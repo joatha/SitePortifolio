@@ -1,0 +1,239 @@
+
+<%-include('header.ejs')%>
+
+<div class="container">
+    
+    <div id="bottoes">
+        <div class="images-01">
+            <span id="button"><img src="/images/01.png" id="image-01" class="image-conteiner" /></span>
+        </div> 
+
+        <div class="images-02">
+            <span id="button-02"><img src="/images/02.png" id="image-02"  class="image-conteiner"/></span>
+        </div>
+
+        <div class="images-03">
+            <span id="button-03"><img src="/images/03.png" id="image-03" class="image-conteiner"/></span>
+        </div>
+
+        <div class="images-04">
+            <span id="button-04"><img src="/images/04.png" id="image-04" class="image-conteiner"/></span>
+        </div>
+
+        <div>
+            <span id="button-05"><img src="/images/05.png" id="image-05" class="image-conteiner"/></span>
+        </div>   
+
+    </div>
+        
+    <div class="modal" id="page-modal">
+
+        <div class="modal-background"></div>
+            <div class="modal-content">
+                <header class="modal-card-head">
+                <p class="modal-card-title">HTML5</p>
+                <button class="delete" aria-label="close" id="close"></button>
+            </header>
+            <section class="modal-card-body">
+          </section>
+        </div>
+    </div>
+
+
+    <div class="modal" id="page-modal">
+
+        <div class="modal-background"></div>
+            <div class="modal-content">
+                <header class="modal-card-head">
+                <p class="modal-card-title">HTML5</p>
+                <button class="delete" aria-label="close" id="close"></button>                
+            </header>
+
+            <section class="modal-card-body">
+                <div>
+                   <p>Testando esse textp</p>
+                    
+                </div>
+                
+          </section>
+        </div>
+    </div>
+
+    <div class="modal" id="page-modal2">
+
+        <div class="modal-background"></div>
+            <div class="modal-content">
+                <header class="modal-card-head">
+                <p class="modal-card-title">CSS3</p>
+                <button class="delete" aria-label="close" id="close2"></button>
+            </header>
+            <section class="modal-card-body">
+          </section>
+        </div>
+    </div>
+
+    <div class="modal" id="page-modal3">
+
+        <div class="modal-background"></div>
+            <div class="modal-content">
+                <header class="modal-card-head">
+                <p class="modal-card-title">JavaScript</p>
+                <button class="delete" aria-label="close" id="close3"></button>
+            </header>
+            <section class="modal-card-body">
+          </section>
+        </div>
+    </div>
+
+    <div class="modal" id="page-modal4">
+
+        <div class="modal-background"></div>
+            <div class="modal-content">
+                <header class="modal-card-head">
+                <p class="modal-card-title">Bootstrap</p>
+                <button class="delete" aria-label="close" id="close4"></button>
+            </header>
+            <section class="modal-card-body">
+          </section>
+        </div>
+    </div>
+
+    <div class="modal" id="page-modal5">
+
+        <div class="modal-background"></div>
+            <div class="modal-content">
+                <header class="modal-card-head">
+                <p class="modal-card-title">Python</p>
+                <button class="delete" aria-label="close" id="close5"></button>
+            </header>
+            <section class="modal-card-body">
+                
+          </section>
+        </div>
+    </div>
+</div>
+
+
+   
+
+</div>
+
+<script>
+let img = document.getElementById('button')
+let img2 = document.getElementById('button-02')
+let img3 = document.getElementById('button-03')
+let img4 = document.getElementById('button-04')
+let img5 = document.getElementById('button-05')
+let modal = document.getElementById('page-modal')
+let modal2 = document.getElementById('page-modal2')
+let modal3 = document.getElementById('page-modal3')
+let modal4 = document.getElementById('page-modal4')
+let modal5 = document.getElementById('page-modal5')
+let close = document.getElementById('close')
+let close2 = document.getElementById('close2')
+let close3 = document.getElementById('close3')
+let close4 = document.getElementById('close4')
+let close5 = document.getElementById('close5')
+
+
+
+img.onclick = (()=>{
+    modal.style.display = 'block'
+})
+close.onclick = (()=>{
+    modal.style.display = 'none'
+})
+
+
+img2.onclick = (()=>{
+    modal2.style.display = 'block'
+})
+close2.onclick = (()=>{
+    modal2.style.display = 'none'
+})
+
+
+img3.onclick = (()=>{
+    modal3.style.display = 'block'
+})
+close3.onclick = (()=>{
+    modal3.style.display = 'none'
+})
+
+img4.onclick = (()=>{
+    modal4.style.display = 'block'
+})
+close4.onclick = (()=>{
+    modal4.style.display = 'none'
+})
+
+img5.onclick = (()=>{
+    modal5.style.display = 'block'
+})
+close5.onclick = (()=>{
+    modal5.style.display = 'none'
+})
+
+window.onclick = function(event){
+    if(event.target.className == 'modal-background'){
+        modal.style.display= 'none'        
+    }
+    if(event.target.className == 'modal-background'){
+        modal2.style.display= 'none'        
+    }
+    if(event.target.className == 'modal-background'){
+        modal3.style.display= 'none'        
+    }
+    if(event.target.className == 'modal-background'){
+        modal4.style.display= 'none'        
+    }
+    if(event.target.className == 'modal-background'){
+        modal5.style.display= 'none'        
+    }
+  
+}
+</script>
+
+    
+<style>
+#bottoes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+    
+}
+.images-01{
+    width: 35%;
+}
+.images-02{
+    padding-left: 1%;
+
+}
+.images-03{
+    width: 60%;
+}
+.images-04{
+    width: 35%;
+}
+
+.modal{
+    padding-top: 5%;
+    position: fixed;
+   
+  
+   
+
+}
+
+</style>
+
+
+    
+
+<%-include('footer.ejs')%>
+
+
+    
