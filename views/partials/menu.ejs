@@ -1,10 +1,11 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
     
 </style>
+
 <div>
- 
-    <section class="hero is-primary is-mediuyn is-bold" >
+     <section class="hero is-info is-mediuyn is-bold" >
         <div class="hero-head">
             <nav class="navbar">
                 <div class="container">
@@ -15,25 +16,59 @@
                     </div>
                     <div class="navbar-menu">
                         <div class="navbar-start">
-                            <a class="navbar-item">Home</a>
-                            <a class="navbar-item">Habilidades</a>
+                            <a class="navbar-item" href="/">Home</a>
                             <a class="navbar-item">Contato</a>
                         </div>
                     </div>
                 </div>
-            </nav>
-            <div class="hero-body">
-                <div class="container has-text-centered">
-                    <h1 class="title">
-                        Portfólio
-                    </h1>
-                    <h3 class="subtititle">
-                        Sejam Bem-vindos ao meu portfólio
-                    </h3>
-                </div>
-            </div>
-         
-          
-        </div>
-    </section>         
+            </nav>                  
+    </section>        
 </div>   
+
+<div id="container">
+    <h1 style="position: absolute;" id="textDigita">Sejam todos bem-vindos ao meu portfólio</h1>
+    <img src="images/08.png" id="image-01">               
+</div>  
+
+<div id="texto">
+    <h1>Habilidades</h1>
+</div>
+
+<hr>
+
+<script>
+
+    function typeWriter(elemento){
+        const textoArray = elemento.innerHTML.split('')
+        elemento.innerHTML = ''
+        textoArray.forEach((letra, i) =>{
+            setTimeout(()=>elemento.innerHTML += letra, 75 * i)
+        })
+    }
+
+    const titulo = document.getElementById('textDigita')
+    typeWriter(titulo)
+
+</script>
+
+<style>
+
+#textDigita{
+    padding-top: 5%;
+    text-align: center;
+    font-size: 60px;
+    margin: 60px auto;
+    color:black ;
+    font-family: 'Montserrat', sans-serif;
+
+}
+#container{
+    display: flex;
+    justify-content: center;
+}
+#image-01{
+        width: 100%;
+        
+        
+}
+</style>
